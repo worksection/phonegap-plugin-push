@@ -12,7 +12,7 @@
     <engine name="cordova-ios" version=">=4.5.0"/>
   </engines>
   <platform name="android">
-    <resource-file src="google-services.json" target="res/google-services.json" />
+    <resource-file src="google-services.json" target="app/google-services.json" />
     <!--source-file src="google-services.json" target-dir="src/release" /-->
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="PushNotification">
