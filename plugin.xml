@@ -64,6 +64,7 @@
     <hook type="after_prepare" src="hooks/browser/updateManifest.js"/>
   </platform>
   <platform name="ios">
+    <resource-file src="Default-2688h.png" target="LaunchImage-1200-Landscape-2688h@3x.png" />
     <config-file target="config.xml" parent="/*">
       <feature name="PushNotification">
         <param name="ios-package" value="PushPlugin"/>
