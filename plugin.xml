@@ -12,8 +12,8 @@
     <engine name="cordova-ios" version=">=4.5.0"/>
   </engines>
   <platform name="android">
-    <resource-file src="google-services.json" target="app/google-services.json" />
-    <source-file src="google-services.json" target-dir="src/release" />
+    <resource-file src="google-services.json" target="res/google-services.json" />
+    <!--source-file src="google-services.json" target-dir="src/release" /-->
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="PushNotification">
         <param name="android-package" value="com.adobe.phonegap.push.PushPlugin"/>
@@ -64,7 +64,7 @@
     <hook type="after_prepare" src="hooks/browser/updateManifest.js"/>
   </platform>
   <platform name="ios">
-    <resource-file src="Default-2688h.png" target="LaunchImage-1200-Landscape-2688h@3x.png" />
+    <resource-file src="Default-2688h.png" target="LaunchImage-1200-Portrait-2688h@3x.png" />
     <config-file target="config.xml" parent="/*">
       <feature name="PushNotification">
         <param name="ios-package" value="PushPlugin"/>
