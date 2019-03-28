@@ -62,7 +62,24 @@
     <hook type="after_prepare" src="hooks/browser/updateManifest.js"/>
   </platform>
   <platform name="ios">
-    <resource-file src="Default-2688h.png" target="LaunchImage-1200-Portrait-2688h@3x.png" />
+    <resource-file src="Default-2688h.png" target="LaunchImage-1200-Portrait-2688h@3x.png" />    
+    <config-file target="*-Info.plist" parent="UILaunchImages">
+    <array>
+      <dict>
+        <key>UILaunchImageOrientation</key>
+        <string>Portrait</string>
+        <key>UILaunchImageName</key>
+        <string>LaunchImage-1200-Portrait-2688h</string>
+        <key>UILaunchImageSize</key>
+        <string>{414, 896}</string>
+        <key>UILaunchImageMinimumOSVersion</key>
+        <string>12.0</string>
+      </dict>
+    </array>
+    </config-file>
+    
+    
+    
     <config-file target="config.xml" parent="/*">
       <feature name="PushNotification">
         <param name="ios-package" value="PushPlugin"/>
