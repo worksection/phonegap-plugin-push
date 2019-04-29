@@ -12,11 +12,11 @@
     <engine name="cordova-ios" version=">=4.5.0"/>
   </engines>
   <platform name="android">
-    <resource-file src="push/drawable-mdpi/ic_notification.png" target="app/src/main/res/drawable-mdpi/ic_notification.png" />
-    <resource-file src="push/drawable-hdpi/ic_notification.png" target="app/src/main/res/drawable-hdpi/ic_notification.png" />
-    <resource-file src="push/drawable-xhdpi/ic_notification.png" target="app/src/main/res/drawable-xhdpi/ic_notification.png" />
-    <resource-file src="push/drawable-xxhdpi/ic_notification.png" target="app/src/main/res/drawable-xxhdpi/ic_notification.png" />
-    <resource-file src="push/drawable-xxxhdpi/ic_notification.png" target="app/src/main/res/drawable-xxxhdpi/ic_notification.png" />
+    <resource-file src="push/drawable-mdpi/ic_notification.png" target="res/drawable-mdpi/ic_notification.png" />
+    <resource-file src="push/drawable-hdpi/ic_notification.png" target="res/drawable-hdpi/ic_notification.png" />
+    <resource-file src="push/drawable-xhdpi/ic_notification.png" target="res/drawable-xhdpi/ic_notification.png" />
+    <resource-file src="push/drawable-xxhdpi/ic_notification.png" target="res/drawable-xxhdpi/ic_notification.png" />
+    <resource-file src="push/drawable-xxxhdpi/ic_notification.png" target="res/drawable-xxxhdpi/ic_notification.png" />
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="PushNotification">
         <param name="android-package" value="com.adobe.phonegap.push.PushPlugin"/>
